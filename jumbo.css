@@ -1,0 +1,60 @@
+.jumbo{
+    width: 100vw;
+    height: 80vh;
+  
+    background-image: url("index.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+.jumbo__container{
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+.jumbo__contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+.jumbo__title{
+    font-family: 'HancomMalangMalang-Regular';
+    font-weight: 700;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.jumbo__sub{
+    font-family: 'HancomMalangMalang-Regular';
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+    .jumbo__container{
+        max-width: 400px;
+    }
+    .jumbo__title{
+        font-size:40px;
+    }
+    .jumbo_sub{
+        font-size: 16px;
+    }
+}

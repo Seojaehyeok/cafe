@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'HancomMalangMalang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'HancomMalangMalang-Regular';
+}
+
+nav{
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.initial{
+
+    font-size: 30px;
+    font-weight: 600;
+    color: #444444;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+.links > li {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444444;
+
+    list-style-type: none;
+    padding: 14px 16px;
+    border-radius: 100px;
+
+    transition: all 0.3s;
+  }
+
+.links > li:hover{
+    background-color: #444444;
+    color: white;
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+      max-width: 400px;
+      padding: 5px 0;
+    }
+    .links {
+      display: none;
+    }
+  }
